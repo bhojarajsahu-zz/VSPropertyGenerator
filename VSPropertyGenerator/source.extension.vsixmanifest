@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="1e14f965-0a8c-4870-b4e9-35bf3683a3a8" Version="2.0" Language="en-US" Publisher="bhojarajsahu88" />
+    <DisplayName>VSPropertyGenerator</DisplayName>
+    <Description xml:space="preserve">Property Generator is simple tool for generating porperty out of XML file, Text file and from other options.
+When you are too lazy to generate class property this small tool will help you to generate class property for you. Thats simple.
+Only thing you have to do is to upload the property name in the form of XML document or write the properties name in the form of text.
+Select appropriate drop down for various options.
+There you go. You will have list of class property generated.</Description>
+    <MoreInfo>http://www.lazzycoder.com</MoreInfo>
+    <Icon>Resources\text_xml64.png</Icon>
+    <PreviewImage>Resources\text_xml64.png</PreviewImage>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="[12.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
